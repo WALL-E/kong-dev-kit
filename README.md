@@ -6,6 +6,11 @@ Kong Development, out-of-the-box
   * kong 0.9.5 is installed 
   * PostgreSQL 9.5.5
 
+## Depend
+
+* docker 1.12+
+* docker-compose 1.8+
+
 ## Start kong
 
 ```
