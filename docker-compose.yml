@@ -1,19 +1,21 @@
-postgre:
-    build: ./postgre
+postgres:
+    build: ./postgres
     expose:
-        - 80
+        - 5432
     tty: true
     stdin_open: true
 
 kong:
     build: ./kong
     links:
-        - postgre
+        - postgres
     ports:
-        - "80:80"
+        - "8000:8000"
+        - "8001:8001"
         - "22"
     expose:
-        - "80"
+        - "8000"
+        - "8001"
         - "22"
     tty: true
     stdin_open: true

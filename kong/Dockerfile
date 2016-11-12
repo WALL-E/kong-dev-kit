@@ -16,6 +16,7 @@ COPY ./supervisord.conf /etc
 COPY ./id_rsa /root/.ssh
 COPY ./id_rsa.pub /root/.ssh
 COPY ./authorized_keys /root/.ssh
+COPY ./init.sh /root/
 
 RUN ["chmod", "600", "/root/.ssh/id_rsa"]
 RUN ["chmod", "600", "/root/.ssh/authorized_keys"]
