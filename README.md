@@ -1,4 +1,4 @@
-# kongkit
+# kong-dev-kit
 
 Kong Development, out-of-the-box
 
