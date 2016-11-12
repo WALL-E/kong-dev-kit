@@ -26,4 +26,4 @@ make test
 make install
 ```
 
-For more details, please check README.md
+For more details, please check **kong/README.md**
