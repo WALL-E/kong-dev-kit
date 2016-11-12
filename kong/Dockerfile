@@ -10,7 +10,9 @@ RUN ["yum", "install", "-y", "iproute", "net-tools", "lsof"]
 RUN ["yum", "install", "-y", "openssh-server", "openssh-clients", "openssh"]
 RUN ["yum", "install", "-y", "http://oerp142a4.bkt.clouddn.com/kong-0.9.5.el7.noarch.rpm"]
 RUN ["yum", "install", "-y", "supervisor"]
+RUN ["yum", "install", "-y", "lua-devel"]
 RUN ["yum", "install", "-y", "luarocks"]
+RUN ["luarocks", "install", "luacrypto", "0.3.2", "OPENSSL_INCDIR=/usr/include"]
 RUN ["/usr/bin/ssh-keygen", "-A"]
 
 COPY ./supervisord.conf /etc
