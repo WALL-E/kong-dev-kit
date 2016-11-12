@@ -16,11 +16,14 @@ kong start
 
 ```
 cd /root
-
 git clone https://github.com/Mashape/kong.git
 cd kong
 
 make dev
+
+make test
+
+make install
 ```
 
 For more details, please check README.md
