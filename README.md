@@ -26,6 +26,8 @@ cd kong
 
 make dev
 
+make lint
+
 make test
 
 make install
