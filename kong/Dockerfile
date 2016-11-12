@@ -1,5 +1,5 @@
 
-FROM 172.28.32.23:8808/public/centos:7.1.1503
+FROM centos:7.1.1503
 
 COPY ./CentOS-Base.repo /etc/yum.repos.d/
 
@@ -20,6 +20,7 @@ COPY ./init.sh /root/
 
 RUN ["chmod", "600", "/root/.ssh/id_rsa"]
 RUN ["chmod", "600", "/root/.ssh/authorized_keys"]
+RUN ["/root/init.sh"]
 
 EXPOSE 22
 EXPOSE 8000

@@ -9,20 +9,15 @@ Kong Development, out-of-the-box
 ## Start kong
 
 ```
-sh /root/init.sh
 kong start
-```
-
-## Download source code
-
-```
-cd /root
-git clone https://github.com/Mashape/kong.git
 ```
 
 ## Running for development
 
 ```
+cd /root
+
+git clone https://github.com/Mashape/kong.git
 cd kong
 
 make dev
