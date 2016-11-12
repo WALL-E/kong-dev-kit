@@ -9,13 +9,18 @@ Kong Development, out-of-the-box
 ## Start kong
 
 ```
-kong start
+docker-compose exec kong kong start
 ```
+
+`:8000` - Proxy layer for API requests
+
+`:8001` - RESTful Admin API for configuration
 
 ## Running for development
 
 ```
-cd /root
+ssh 127.0.0.1 -p 8022 -i kong/id_rsa
+
 git clone https://github.com/Mashape/kong.git
 cd kong
 

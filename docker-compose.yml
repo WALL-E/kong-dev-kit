@@ -2,8 +2,6 @@ postgres:
     build: ./postgres
     expose:
         - 5432
-    tty: true
-    stdin_open: true
 
 kong:
     build: ./kong
@@ -12,10 +10,8 @@ kong:
     ports:
         - "8000:8000"
         - "8001:8001"
-        - "22"
+        - "8022:22"
     expose:
         - "8000"
         - "8001"
         - "22"
-    tty: true
-    stdin_open: true
