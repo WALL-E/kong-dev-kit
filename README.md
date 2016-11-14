@@ -11,31 +11,39 @@ Kong Development, out-of-the-box
 * docker 1.12+
 * docker-compose 1.8+
 
-## Start kong
+## Start docker and kong
 
 ```
-docker-compose exec kong kong start
+# docker-compose up -d
+
+# docker-compose exec kong kong start
 ```
+
+Now, Kong is running
 
 `:8000` - Proxy layer for API requests
 
 `:8001` - RESTful Admin API for configuration
 
+```
+$ curl 127.0.0.1:8001
+```
+
 ## Running for development
 
 ```
-ssh 127.0.0.1 -p 8022 -i kong/id_rsa
+# ssh 127.0.0.1 -p 8022 -i kong/id_rsa
 
-git clone https://github.com/Mashape/kong.git
-cd kong
+# git clone https://github.com/Mashape/kong.git
+# cd kong
 
-make dev
+# make dev
 
-make lint
+# make lint
 
-make test
+# make test
 
-make install
+# make install
 ```
 
 For more details, please check **kong/README.md**
