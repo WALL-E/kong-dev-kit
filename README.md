@@ -58,4 +58,4 @@ $ curl 127.0.0.1:8001
 # make install
 ```
 
-For more details, please check **kong/README.md**
+For more details, please check [kong/README.md](https://github.com/WALL-E/kong/blob/master/README.md)
