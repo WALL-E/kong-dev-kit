@@ -7,6 +7,7 @@ Kong Development, out-of-the-box
   * PostgreSQL 9.5.5
 
 ## Depend
+You must install docker and docker-compose
 
 * docker 1.12+
 * docker-compose 1.8+
@@ -14,6 +15,8 @@ Kong Development, out-of-the-box
 ## Start docker and kong
 
 ```
+# cd kong-dev-kit
+
 # docker-compose up -d
 
 # docker-compose exec kong kong start
