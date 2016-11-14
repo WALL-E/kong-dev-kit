@@ -1,8 +1,6 @@
 
 FROM centos:7.1.1503
 
-COPY ./CentOS-Base.repo /etc/yum.repos.d/
-
 RUN ["mkdir", "/var/log/supervisor"]
 RUN ["mkdir", "-p", "/root/.ssh"]
 RUN ["yum", "remove", "-y", "fakesystemd"]
