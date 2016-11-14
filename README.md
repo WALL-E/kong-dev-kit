@@ -25,6 +25,8 @@ Now, Kong is running
 
 `:8001` - RESTful Admin API for configuration
 
+`:8022` - Connect to container by ssh
+
 ```
 $ curl 127.0.0.1:8001
 ```
@@ -32,6 +34,7 @@ $ curl 127.0.0.1:8001
 ## Running for development
 
 ```
+# chmod 600 kong/id_rsa
 # ssh 127.0.0.1 -p 8022 -i kong/id_rsa
 
 # git clone https://github.com/Mashape/kong.git
@@ -42,6 +45,12 @@ $ curl 127.0.0.1:8001
 # make lint
 
 # make test
+
+# make test-integration
+
+# make test-plugins
+
+# make test-all
 
 # make install
 ```
