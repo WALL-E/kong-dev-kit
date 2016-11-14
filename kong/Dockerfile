@@ -8,12 +8,12 @@ RUN ["mkdir", "-p", "/root/.ssh"]
 RUN ["yum", "remove", "-y", "fakesystemd"]
 RUN ["yum", "install", "-y", "iproute", "net-tools", "lsof"]
 RUN ["yum", "install", "-y", "openssh-server", "openssh-clients", "openssh"]
-RUN ["yum", "install", "-y", "http://oerp142a4.bkt.clouddn.com/kong-0.9.5.el7.noarch.rpm"]
 RUN ["yum", "install", "-y", "supervisor"]
 RUN ["yum", "install", "-y", "lua-devel"]
 RUN ["yum", "install", "-y", "luarocks"]
 RUN ["yum", "install", "-y", "git"]
 RUN ["yum", "groupinstall", "-y", "development", "tools"]
+RUN ["yum", "install", "-y", "https://github.com/Mashape/kong/releases/download/0.9.5/kong-0.9.5.el7.noarch.rpm"]
 RUN ["/usr/bin/ssh-keygen", "-A"]
 
 COPY ./supervisord.conf /etc
