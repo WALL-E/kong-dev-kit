@@ -1,10 +1,11 @@
 # kong-dev-kit
 
-Kong Development, out-of-the-box
+Kong Development, out-of-the-box, SSH Server for Docker containers
 
 * Development environment
   * kong 0.9.5
   * PostgreSQL 9.5.5
+
 
 ## Depend
 You must install docker and docker-compose
@@ -62,6 +63,8 @@ $ curl 127.0.0.1:8001
 # make test-all
 
 # make install
+
+# kong restart
 ```
 
-For more details, please check [kong/README.md](https://github.com/WALL-E/kong/blob/master/README.md)
+For more details, please check [kong/README.md](https://github.com/Mashape/kong/blob/master/README.md)
