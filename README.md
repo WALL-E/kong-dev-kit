@@ -6,6 +6,8 @@ Kong Development, out-of-the-box
   * kong 0.9.5
   * PostgreSQL 9.5.5
 
+**SSH Server for Docker containers**
+
 ## Depend
 You must install docker and docker-compose
 
