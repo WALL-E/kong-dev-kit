@@ -63,6 +63,8 @@ $ curl 127.0.0.1:8001
 # make test-all
 
 # make install
+
+# kong restart
 ```
 
 For more details, please check [kong/README.md](https://github.com/Mashape/kong/blob/master/README.md)
