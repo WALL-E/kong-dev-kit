@@ -13,7 +13,7 @@ You must install docker and docker-compose
 * docker 1.12+
 * docker-compose 1.8+
 
-[Install](https://github.com/WALL-E/static)
+[INSTALL](https://github.com/WALL-E/static)
 
 
 ## Start docker and kong
