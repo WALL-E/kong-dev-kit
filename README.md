@@ -38,6 +38,8 @@ Now, Kong is running
 $ curl 127.0.0.1:8001
 ```
 
+[DOCS](https://getkong.org/docs/)
+
 ## Running for development
 
 ```
