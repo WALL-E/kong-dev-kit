@@ -73,4 +73,14 @@ Person repo
 # kong restart
 ```
 
+另外，需要修改测试配置文件: `spec/kong_tests.conf`
+```
+database = postgres
+pg_host = postgres_tests
+pg_user = postgres
+pg_password = postgres
+pg_port = 5432
+pg_database = kong_tests
+```
+
 For more details, please check [kong/README.md](https://github.com/Mashape/kong/blob/master/README.md)
