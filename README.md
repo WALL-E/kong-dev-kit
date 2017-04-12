@@ -13,17 +13,12 @@ You must install docker and docker-compose
 * docker 1.12+
 * docker-compose 1.8+
 
-## Accelerator
-
-There is a special branch for Chinese users, you can ignore this step if you don't need
-
-```
-# git checkout accelerator
-```
 
 ## Start docker and kong
 
 ```
+# docker-compose build
+
 # docker-compose up -d
 
 # docker-compose exec kong kong start
