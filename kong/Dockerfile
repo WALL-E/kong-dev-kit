@@ -9,6 +9,7 @@ RUN ["yum", "install", "-y", "supervisor"]
 RUN ["yum", "install", "-y", "lua-devel"]
 RUN ["yum", "install", "-y", "luarocks"]
 RUN ["yum", "install", "-y", "git"]
+RUN ["yum", "install", "-y", "vim"]
 RUN ["yum", "groupinstall", "-y", "development", "tools"]
 RUN ["yum", "install", "-y", "http://oerp142a4.bkt.clouddn.com/kong-0.10.1.el7.noarch.rpm"]
 
