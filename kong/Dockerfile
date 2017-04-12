@@ -1,6 +1,7 @@
 
-FROM hub.c.163.com/library/centos:latest
+FROM hub.c.163.com/library/centos:7.3.1611
 
+RUN ["yum", "install", "-y", "systemd"]
 RUN ["yum", "remove", "-y", "fakesystemd"]
 RUN ["yum", "install", "-y", "epel-release"]
 RUN ["yum", "install", "-y", "iproute", "net-tools", "lsof"]
@@ -10,6 +11,7 @@ RUN ["yum", "install", "-y", "lua-devel"]
 RUN ["yum", "install", "-y", "luarocks"]
 RUN ["yum", "install", "-y", "git"]
 RUN ["yum", "install", "-y", "vim"]
+RUN ["yum", "install", "-y", "deltarpm"]
 RUN ["yum", "groupinstall", "-y", "development", "tools"]
 RUN ["yum", "install", "-y", "http://oerp142a4.bkt.clouddn.com/kong-0.10.1.el7.noarch.rpm"]
 

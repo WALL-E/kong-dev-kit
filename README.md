@@ -3,8 +3,9 @@
 Kong Development, out-of-the-box, SSH Server for Docker containers
 
 * Development environment
-  * kong 0.10.1
-  * PostgreSQL 9.5.5
+  * CentOS 7.3.1611
+    * kong 0.10.1
+  * PostgreSQL 9.6.2
 
 
 ## Depend
