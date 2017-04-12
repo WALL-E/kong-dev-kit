@@ -42,7 +42,7 @@ $ curl 127.0.0.1:8001
 # chmod 600 kong/id_rsa
 # ssh 127.0.0.1 -p 8022 -i kong/id_rsa
 
-# git clone https://github.com/Mashape/kong.git
+# git clone https://github.com/WALL-E/kong.git
 # cd kong
 
 # make dev
