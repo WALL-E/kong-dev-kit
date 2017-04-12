@@ -44,6 +44,7 @@ $ curl 127.0.0.1:8001
 
 # git clone https://github.com/WALL-E/kong.git
 # cd kong
+# git checkout -b local-branchname origin/remote_branchname
 
 # make dev
 
