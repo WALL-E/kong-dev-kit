@@ -1,5 +1,5 @@
 
-FROM centos:7.1.1503
+FROM hub.c.163.com/library/centos:latest
 
 RUN ["yum", "remove", "-y", "fakesystemd"]
 RUN ["yum", "install", "-y", "epel-release"]

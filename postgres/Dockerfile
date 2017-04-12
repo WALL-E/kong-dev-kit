@@ -1,4 +1,4 @@
 
-FROM postgres:9.5.5
+FROM hub.c.163.com/library/postgres:latest
 EXPOSE 5432
 ENV POSTGRES_PASSWORD postgres
