@@ -10,7 +10,7 @@ RUN ["yum", "install", "-y", "lua-devel"]
 RUN ["yum", "install", "-y", "luarocks"]
 RUN ["yum", "install", "-y", "git"]
 RUN ["yum", "groupinstall", "-y", "development", "tools"]
-RUN ["yum", "install", "-y", "https://github.com/Mashape/kong/releases/download/0.10.1/kong-0.10.1.el7.noarch.rpm"]
+RUN ["yum", "install", "-y", "http://oerp142a4.bkt.clouddn.com/kong-0.10.1.el7.noarch.rpm"]
 
 RUN ["mkdir", "-p", "/root/.ssh"]
 RUN ["/usr/bin/ssh-keygen", "-A"]
