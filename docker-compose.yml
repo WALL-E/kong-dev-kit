@@ -3,6 +3,13 @@ postgres:
     expose:
         - 5432
 
+postgres_tests:
+    build: ./postgres
+    expose:
+        - 5432
+    environment:
+        - POSTGRES_DB=kong_tests
+
 kong:
     build: ./kong
     links:
