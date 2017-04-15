@@ -73,6 +73,11 @@ Person repo
 # kong restart
 ```
 
+运行单个测试用例
+```
+bin/busted spec/03-plugins/24-rate-limiting/01-schema_spec.lua
+```
+
 另外，需要修改测试配置文件: `spec/kong_tests.conf`
 ```
 database = postgres
