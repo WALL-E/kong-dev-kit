@@ -37,6 +37,8 @@ Now, Kong is running
 
 `:9000` - HTTP Request & Response Service
 
+`:9001` - Dashboard for managing Kong gateway
+
 ```
 $ curl 127.0.0.1:8001
 ```
