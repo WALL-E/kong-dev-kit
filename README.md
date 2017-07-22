@@ -35,6 +35,8 @@ Now, Kong is running
 
 `:8022` - Connect to container by ssh
 
+`:9000` - HTTP Request & Response Service
+
 ```
 $ curl 127.0.0.1:8001
 ```
