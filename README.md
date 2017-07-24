@@ -45,7 +45,11 @@ Now, Kong is running
 `:6379` - Redis
 
 ```
-$ curl 127.0.0.1:8001
+Retrieve node status
+$ curl http://127.0.0.1:8001/status
+
+Connect to PostgreSQL
+$ psql -U postgres -d postgres -h 127.0.0.1
 ```
 
 [DOCS](https://getkong.org/docs/)
