@@ -54,6 +54,12 @@ $ psql -U postgres -d postgres -h 127.0.0.1
 
 [DOCS](https://getkong.org/docs/)
 
+## Built-in available service name 
+* redis
+* httpbin
+* postgre
+* kong
+
 ## Running for development
 
 ```
