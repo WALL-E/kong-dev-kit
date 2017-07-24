@@ -13,8 +13,8 @@ Kong Development, out-of-the-box, SSH Server for Docker containers
 ## Depend
 You must install docker and docker-compose
 
-* docker 1.12+
-* docker-compose 1.8+
+* docker 17.06.0-ce
+* docker-compose 1.12.0
 
 [INSTALL](https://github.com/WALL-E/static)
 
