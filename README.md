@@ -8,6 +8,7 @@ Kong Development, out-of-the-box, SSH Server for Docker containers
   * PostgreSQL 9.6.2
   * httpbin
   * kong-dashboard
+  * redis
 
 
 ## Depend
@@ -40,6 +41,8 @@ Now, Kong is running
 `:9000` - HTTP Request & Response Service
 
 `:9001` - Dashboard for managing Kong gateway
+
+`:6379` - Redis
 
 ```
 $ curl 127.0.0.1:8001
