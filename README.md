@@ -11,7 +11,7 @@ Kong Development, out-of-the-box, SSH Server for Docker containers
   * redis
 
 
-## Depend
+## Depends
 You must install docker and docker-compose
 
 * docker 17.06.0-ce
