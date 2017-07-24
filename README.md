@@ -6,13 +6,15 @@ Kong Development, out-of-the-box, SSH Server for Docker containers
   * CentOS 7.3.1611
     * kong 0.10.3
   * PostgreSQL 9.6.2
+  * httpbin
+  * kong-dashboard
 
 
 ## Depend
 You must install docker and docker-compose
 
-* docker 1.12+
-* docker-compose 1.8+
+* docker 17.06.0-ce
+* docker-compose 1.12.0
 
 [INSTALL](https://github.com/WALL-E/static)
 
