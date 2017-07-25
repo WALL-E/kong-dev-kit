@@ -1,2 +1,0 @@
-include README.rst LICENSE AUTHORS requirements.txt
-recursive-include httpbin/templates *
