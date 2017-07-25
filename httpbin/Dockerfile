@@ -8,6 +8,6 @@ RUN apk add --update python python-dev py-pip build-base ca-certificates libffi-
 RUN pip install --upgrade pip
 RUN pip install gunicorn && pip install /httpbin
 
-EXPOSE 8080
+EXPOSE 80
 
-CMD gunicorn -b 0.0.0.0:8080 httpbin:app
+CMD gunicorn -b 0.0.0.0:80 httpbin:app

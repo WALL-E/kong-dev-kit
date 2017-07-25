@@ -1,5 +1,7 @@
 dashboard:
     build: ./kong-dashboard
+    links:
+        - kong
     expose:
         - 8080
     ports:
@@ -8,9 +10,9 @@ dashboard:
 httpbin:
     build: ./httpbin
     expose:
-        - 8080
+        - 80
     ports:
-        - "9000:8080"
+        - "9000:80"
 
 postgres:
     build: ./postgres
@@ -28,6 +30,8 @@ kong:
     build: ./kong
     links:
         - postgres
+        - httpbin
+        - redis
     ports:
         - "8000:8000"
         - "8001:8001"
@@ -39,6 +43,8 @@ kong:
 
 redis:
   build: ./redis
+  expose:
+    - 6379
   ports:
     - "6379:6379"
   volumes:
