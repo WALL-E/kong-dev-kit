@@ -1,3 +1,3 @@
 FROM citizenstig/httpbin
 
-EXPOSE 8080
+EXPOSE 8000

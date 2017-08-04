@@ -10,9 +10,9 @@ dashboard:
 httpbin:
     build: ./httpbin
     expose:
-        - 8080
+        - 8000
     ports:
-        - "9000:8080"
+        - "9000:8000"
 
 postgres:
     build: ./postgres
