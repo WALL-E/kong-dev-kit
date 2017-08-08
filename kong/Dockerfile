@@ -28,6 +28,7 @@ COPY ./authorized_keys /root/.ssh
 COPY ./init.sh /root/
 COPY ./db.sh /root/
 COPY ./db-test.sh /root/
+COPY ./git.sh /root/
 COPY ./pgpass /root/.pgpass
 
 RUN ["chmod", "600", "/root/.ssh/id_rsa"]
