@@ -34,7 +34,7 @@ COPY ./pgpass /root/.pgpass
 RUN ["chmod", "600", "/root/.pgpass"]
 RUN ["chmod", "600", "/root/.ssh/id_rsa"]
 RUN ["chmod", "600", "/root/.ssh/authorized_keys"]
-RUN ["/root/init.sh"]
+RUN ["/root/init_dev.sh"]
 
 EXPOSE 22
 EXPOSE 8000
