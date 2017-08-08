@@ -9,6 +9,7 @@ echo "pg_database = postgres" >> /etc/kong/kong.conf
 
 echo 'PATH="/usr/local/openresty/bin/:"$PATH' >> /etc/profile
 
-localedef -v -c -i en_US -f UTF-8 en_US.UTF-8
+localedef -v -c -i zh_CN -f UTF-8 zh_CN.UTF-8
+
 
 exit 0
