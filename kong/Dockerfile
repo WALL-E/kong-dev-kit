@@ -13,6 +13,7 @@ RUN ["yum", "install", "-y", "git"]
 RUN ["yum", "install", "-y", "vim"]
 RUN ["yum", "install", "-y", "redis"]
 RUN ["yum", "install", "-y", "wget"]
+RUN ["yum", "install", "-y", "postgresql"]
 RUN ["yum", "install", "-y", "deltarpm"]
 RUN ["yum", "groupinstall", "-y", "development", "tools"]
 RUN ["yum", "install", "-y", "http://oo2fuseka.bkt.clouddn.com/kong-0.10.3.el7.noarch.rpm"]
@@ -25,6 +26,9 @@ COPY ./id_rsa /root/.ssh
 COPY ./id_rsa.pub /root/.ssh
 COPY ./authorized_keys /root/.ssh
 COPY ./init.sh /root/
+COPY ./db.sh /root/
+COPY ./db-test.sh /root/
+COPY ./pgpass /root/.pgpass
 
 RUN ["chmod", "600", "/root/.ssh/id_rsa"]
 RUN ["chmod", "600", "/root/.ssh/authorized_keys"]
