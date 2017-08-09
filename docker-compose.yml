@@ -30,6 +30,7 @@ kong:
     build: ./kong
     links:
         - postgres
+        - postgres_tests
         - httpbin
         - redis
     ports:
