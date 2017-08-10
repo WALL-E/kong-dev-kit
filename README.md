@@ -95,6 +95,7 @@ Person repo
 Run a single spec
 ```
 bin/busted spec/03-plugins/24-rate-limiting/01-schema_spec.lua
+bin/busted spec/03-plugins/14-cors/01-access_spec.lua
 ```
 
 Also, you need to modify the test configuration file: `spec/kong_tests.conf`
