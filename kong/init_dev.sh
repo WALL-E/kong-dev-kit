@@ -16,6 +16,10 @@ localedef -v -c -i en_US -f UTF-8 en_US.UTF-8
 cd ~
 git clone https://github.com/WALL-E/kong.git
 cd kong/
+git config --global user.email "zzgigi2003@163.com"
+git config --global user.name "zhangzheng"
+git remote add upstream https://github.com/Mashape/kong.git
+git fetch upstream
 git checkout -b feat/cors origin/feat/cors
 make dev
 make lint
