@@ -1,9 +1,9 @@
 
 FROM hub.c.163.com/library/centos:7.3.1611
 
+RUN ["yum", "install", "-y", "epel-release"]
 RUN ["yum", "install", "-y", "systemd"]
 RUN ["yum", "remove", "-y", "fakesystemd"]
-RUN ["yum", "install", "-y", "epel-release"]
 RUN ["yum", "install", "-y", "iproute", "net-tools", "lsof"]
 RUN ["yum", "install", "-y", "openssh-server", "openssh-clients", "openssh"]
 RUN ["yum", "install", "-y", "supervisor"]
@@ -16,7 +16,7 @@ RUN ["yum", "install", "-y", "wget"]
 RUN ["yum", "install", "-y", "postgresql"]
 RUN ["yum", "install", "-y", "deltarpm"]
 RUN ["yum", "groupinstall", "-y", "development", "tools"]
-RUN ["yum", "install", "-y", "http://oo2fuseka.bkt.clouddn.com/kong-0.10.3.el7.noarch.rpm"]
+RUN ["yum", "install", "-y", "kong-community-edition-0.11.1.*.noarch.rpm --nogpgcheck"]
 
 RUN ["mkdir", "-p", "/root/.ssh"]
 RUN ["/usr/bin/ssh-keygen", "-A"]
